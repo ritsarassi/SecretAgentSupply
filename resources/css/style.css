@@ -1,159 +1,150 @@
+/*universal styles*/
+
 html {
   font-size: 18px;
 }
 
-/*Header*/
+body {
+  font-family: Helvetica;
+}
+
+/*header style*/
+
 header {
   display: flex;
   width: 100%;
-  height: 2.24rem;
-  background-color: black
+  background-color: black;
+  flex-direction: row;
+  position: fixed;
+  color: white;
 }
 
-.header {
-  display: inline-flex;
-  width: 960px;
+header span {
+  display: flex;
+  margin: .66rem .5rem;
   align-items: center;
-  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .logo {
-  display: inline-flex;
-  height: 1.5rem;
-  padding-left: 0.5rem;
-  padding-right: 1rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.header span {
-  display: inline-flex;
-  font-family: Helvetica;
-  font-size: 1rem;
-  padding: 0.66rem auto;
-  color: white;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Main Banner*/
-
-.Main_banner {
   display: flex;
-  height: 25rem;
-  width: 100%;
+  height: 1.5rem;
+  margin: .66rem .5rem;
+}
+
+/*main banner*/
+
+.main_banner {
+  display: flex;
   background-image: url('../images/moto.jpeg');
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  width: 100%;
+  height: 25rem;
+  justify-content: center;
 }
 
-.banner {
+/*headline styles*/
+
+.headline {
   display: flex;
-  background-color: black;
   width: 20rem;
-  height: 9.5rem;
-  margin-top: 9rem;
-  position: relative;
-  left: 18rem;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 11rem;
+  margin-top: 9rem;
+  color: white;
 }
 
-.New_arrival {
+.headline h4 {
   display: flex;
-  color: white;
-  margin-left: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 0.25rem;
+  margin: 2rem auto .25rem 3rem;
   font-family: Helvetica;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.Bikes {
+.headline h1 {
   display: flex;
-  color: white;
-  margin-top: 0.25rem;
-  margin-left: 3rem;
-  font-family: Helvetica;
+  margin: .25rem auto auto 3rem;
   font-size: 2rem;
   font-weight: bold;
-  align-items: center;
-  justify-content: center;
+  font-family: Helvetica;
 }
 
-/*navigation menu*/
+/*navigation*/
 
-.navigation {
+nav {
   display: flex;
   width: 100%;
-  height: 2.5rem;
   background-color: firebrick;
-  justify-content: center;
-}
-
-.navigation span {
-  display: inline-flex;
-  width: 960px;
-  align-items: center;
-  justify-content: center;
-  margin: 0.75rem 0;
-}
-
-.navigation a {
-  display: flex;
-  margin: 0.75rem 0;
   color: white;
-  text-decoration: none;
-}
-/*product grid part*/
-.product_grid {
-  display: flex;
-  width: 960px;
-  position: relative;
-  left: 18rem;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row;
 }
 
-.content {
+nav ul {
+  display: inline-flex;
+  padding: .75rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products,
+.information {
   display: flex;
-  flex-direction: column;
-  margin: 3rem 1.5rem;
-  height: 13rem;
+  width: 960px;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+
+.product {
   width: 30%;
   border: 4px solid black;
-  align-items: center;
-  justify-content: center;
-
 }
 
-.image {
+.product-image {
   display: flex;
-  flex-direction: column;
-  height: 9rem;
-  width: 9rem;
   margin: 2rem auto;
   align-items: center;
   justify-content: center;
 }
 
-.text {
+.image {
   display: flex;
-  width: 16.5rem;
-  height: 2rem;
-  margin: 0.5rem 0;
-  background-color: black;
-  color: white;
-  align-items: center;
+  height: 9rem;
+  max-width: 8rem;
   justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: block;
+  background-color: black;
+  padding: .5rem;
+  text-align: center;
+  color: white;
 }
 
 .info {
-  display: flex;
-  width: 960px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
 }
