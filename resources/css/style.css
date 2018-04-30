@@ -16,6 +16,7 @@ header {
   background-color: black;
   flex-direction: row;
   position: fixed;
+  z-index: 1;
   color: white;
 }
 
@@ -40,43 +41,31 @@ header span {
 /*main banner*/
 
 .main_banner {
-  display: flex;
   background-image: url('../images/moto.jpeg');
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  background-size: cover;;
   height: 25rem;
-  justify-content: center;
 }
 
 /*headline styles*/
 
 .headline {
-  display: flex;
+  position: relative;
+  top: 9rem;
   width: 20rem;
   background-color: black;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 11rem;
-  margin-top: 9rem;
+  padding: 2rem 3rem;
   color: white;
 }
 
 .headline h4 {
-  display: flex;
-  margin: 2rem auto .25rem 3rem;
-  font-family: Helvetica;
-  font-size: 1rem;
   font-weight: bold;
 }
 
 .headline h1 {
-  display: flex;
-  margin: .25rem auto auto 3rem;
+  margin: 0.25rem 0;
   font-size: 2rem;
   font-weight: bold;
-  font-family: Helvetica;
 }
 
 /*navigation*/
