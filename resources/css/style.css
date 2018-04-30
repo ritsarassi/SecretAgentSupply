@@ -32,7 +32,10 @@ h4 {
 
 header {
   background-color: black;
+  width: 100%;
+  z-index: 1;
   color: white;
+  position: fixed;
 }
 
 header .container {
@@ -72,7 +75,7 @@ header .container {
 }
 
 @media only screen and (max-width: 470px) {
-  .main-banner {
+  .main_banner {
     height: 15rem;
   }
 
@@ -105,6 +108,11 @@ nav ul {
   padding: 0.75rem 0;
 }
 
+li a {
+  color: white;
+  text-decoration: none;
+}
+
 .mobile-nav {
   display: none;
 }
@@ -120,7 +128,7 @@ nav ul {
   }
 }
 
-/* Products and Information Section */
+/* Products and Information */
 
 .products,
 .information {
@@ -146,7 +154,7 @@ nav ul {
   max-width: 8rem;
 }
 
-.description {
+.text {
   display: block;
   padding: 0.5rem;
   background-color: black;
